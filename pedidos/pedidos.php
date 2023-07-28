@@ -33,20 +33,20 @@
                             $endereco = ($res['endereco']);
                             $telefone = ($res['telefone']);
                             echo
-                            "<option value=\"$cliente\" id=\"?id=$cliente\">$cliente</option>";
+                            "<option value=\"$endereco\">$cliente</option>";
                         };
                     
                     ?>
                 </select>
-
-                <output type="text" name="endereco" class="form-control mt-3" id="rua"></output>
+                <p class="mt-3 mb-1">Endereço</p>
+                <output type="text" name="endereco" class="form-control mt-0" id="rua"></output>
             </div>
             <script>
             function escolherCliente(value) {
                    
-                $teste =value;            
+                document.querySelector("#rua").innerHTML = value;        
                    
-                    document.querySelector("#rua").innerHTML = $telefone;
+                   
                 
                 }
             </script>
