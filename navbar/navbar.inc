@@ -26,7 +26,7 @@
         <a class="nav-link" href="#">Clientes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Cardapio</a>
+        <a class="nav-link" href="../cardapio/cardapio.php">Cardapio</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Delivery</a>
