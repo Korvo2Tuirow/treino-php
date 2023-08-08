@@ -16,7 +16,7 @@
   <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown" >
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Inicio </a>
+        <a class="nav-link" href="../home/home.php">Inicio </a>
       </li>
       
       <li class="nav-item">

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php include "../navbar/navbar.php" ?>
+    <?php include "../navbar/navbar.inc" ?>
 
     <div class="container d-flex justify-content-center mt-4">
         <h1 class="d-flex">PEDIDOS</h1>
@@ -34,8 +34,10 @@
                             $telefone = ($res['telefone']);
                             echo
                             "<option value=\"$endereco\">$cliente</option>";
+
+                             
                         };
-                    
+                         
                     ?>
                 </select>
                 <p class="mt-3 mb-1">Endereço</p>
