@@ -12,9 +12,34 @@
         <?php include "../navbar/navbar.inc";?>
     </header>
 
+    <?php 
+    if(array_key_exists('novo', $_POST)){
+    include "../conn/conn.php";
+    date_default_timezone_set("America/Sao_Paulo");
+    $data = date("d/m/Y H:i");
 
-<p>ola</p>
+    $novo_pedido = "
+    INSERT INTO `point_do_canal`.`novo_pedido` (`pedido`, `data`) VALUES (default, '$data')";
+    
+    echo $data;
+    header('location:../cardapio/cardapio.php');   
 
+    //mysqli_query($conn, $novo_pedido);
+
+    
+
+    if(!isset($_SESSION)){
+        session_start();
+        $_SESSION['pedido'] = "pedido";
+    };
+
+    };
+    
+   
+    ?>
+    <form method="post">
+    <input type="submit" name="novo" class="btn btn-primary" value="Novo Pedido">
+    </form>
 
 
 
