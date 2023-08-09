@@ -1,4 +1,4 @@
-<?php include "../conn/conn.php";?>
+<?php include "../conn/conn.php"; ?>
 
 <!DOCTYPE html>
 <html lang="pt=br">
@@ -18,48 +18,38 @@
     </div>
 
     <div class="container">
-             <form id="formCliente" action="" method="POST">           
+        <form id="formPedido" action="" method="POST">
             <div>
-                <label for="nome" >Selecione o cliente</label>
-                <select class="form-control" id="nome" name="cliente" required onchange="escolherCliente(this.value)">
-                    <option value="">Selecione o cliente</option>
+                <label for="nome">Selecione o cliente</label>
+                <select class="form-control" id="nome" name="pedido" required onchange="escolherPedido(this.value)">
+                    <option value="">Selecione o Pedido</option>
                     <?php
-                        
-                        $sql = "SELECT * FROM clientes order by nome;";
-                        $query = mysqli_query($conn, $sql);
-                        while ($res = mysqli_fetch_array($query)) {
-        
-                            $cliente = ($res['nome']);
-                            $endereco = ($res['endereco']);
-                            $telefone = ($res['telefone']);
-                            echo
-                            "<option value=\"$endereco\">$cliente</option>";
 
-                             
-                        };
-                         
+                    $sql = "SELECT * FROM novo_pedido";
+                    $query = mysqli_query($conn, $sql);
+                    while ($res = mysqli_fetch_array($query)) {
+
+                        $pedido = ($res['pedido']);
+                        $data = ($res['data']);
+
+                        echo
+                        "<option value=\"$data\">$pedido</option>";
+                    };
+
                     ?>
                 </select>
-                <p class="mt-3 mb-1">Endereço</p>
-                <output type="text" name="endereco" class="form-control mt-0" id="rua"></output>
+
+                <output class="form-control mt-3" id="data"></output>
+                <script>
+                    function escolherPedido(value) {
+                        document.querySelector("#data").innerHTML = value;
+                    }
+                </script>
+
             </div>
-            <script>
-            function escolherCliente(value) {
-                   
-                document.querySelector("#rua").innerHTML = value;        
-                   
-                   
-                
-                }
-            </script>
-                
-            
 
 
-            
-            
-            
-         <!--  <div class="mt-4">
+            <!--  <div class="mt-4">
 
                 <div class="form-group">
                     <label for="formGroupExampleInput ">Endereço</label>
@@ -69,8 +59,8 @@
                     <label for="formGroupExampleInput2">Telefone</label>
                     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="#">
                 </div>
-            -->
-                <input type="submit" value="ENVIAR" class="btn btn-success mt-5">
+           
+                <input type="submit" value="ENVIAR" class="btn btn-success mt-5"> -->
 
         </form>
     </div>
