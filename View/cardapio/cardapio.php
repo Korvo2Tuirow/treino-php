@@ -1,5 +1,5 @@
 <?php
-include "../conn/conn.php";
+include "conn/conn.php";
 
 ?>
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ include "../conn/conn.php";
 
 <body>
     <header>
-        <?php include "../navbar/navbar.inc"; ?>
+        <?php include "view/navbar/navbar.php"; ?>
     </header>
 
     <section class="container mx-auto mt-lg-5 row d-flex justify-content-center ">

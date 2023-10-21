@@ -9,10 +9,10 @@
 <body>
     
     <header>
-        <?php include "../navbar/navbar.inc";?>
+        <?php require "view/navbar/navbar.php";?>
     </header>
 
-    <?php 
+    <?php /*
     if(array_key_exists('novo', $_POST)){
     include "../conn/conn.php";
     date_default_timezone_set("America/Sao_Paulo");
@@ -35,10 +35,13 @@
 
     };
     
-   
+   */
     ?>
+
     <form method="post">
-    <input type="submit" name="novo" class="btn btn-primary" value="Novo Pedido">
+    <div class="row flex justify-content-end">
+    <input type="submit" name="novo" class="btn btn-primary mr-4" value="Novo Pedido">
+    </div>
     </form>
 
 

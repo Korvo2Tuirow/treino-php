@@ -1,4 +1,4 @@
-<?php include "../conn/conn.php"; ?>
+<?php include "conn/conn.php"; ?>
 
 <!DOCTYPE html>
 <html lang="pt=br">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php include "../navbar/navbar.inc" ?>
+    <?php include "view/navbar/navbar.php";?>
 
     <div class="container d-flex justify-content-center mt-4">
         <h1 class="d-flex">PEDIDOS</h1>

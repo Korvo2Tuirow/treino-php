@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../login/style_login.css">
+  <link rel="stylesheet" href="View/login/style_login.css">
   <title>ERP SYSTEM KORVO TUIROW</title>
 </head>
 <body>

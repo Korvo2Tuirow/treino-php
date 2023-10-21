@@ -9,30 +9,30 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <img  src="../imagens/vincentcrow_0.jpg" style="height:56px"></img>
+  <img  src="imagens/vincentcrow_0.jpg" style="height:56px"></img>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown" >
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="../home/home.php">Inicio </a>
+        <a class="nav-link" href="home">Inicio </a>
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="../pedidos/pedidos.php">Pedidos</a>
+        <a class="nav-link" href="pedidos">Pedidos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Clientes</a>
+        <a class="nav-link" href="">Clientes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../cardapio/cardapio.php">Cardapio</a>
+        <a class="nav-link" href="cardapio">Cardapio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Delivery</a>
+        <a class="nav-link" href="">Delivery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Estoque</a>
+        <a class="nav-link" href="">Estoque</a>
       </li>
      <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
